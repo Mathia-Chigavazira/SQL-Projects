@@ -1,1 +1,13 @@
+This project analyses data on female tennis players using SQLite. All the data has been collected from WTAtennis.com. 
+This project includes: a database of tennis players - tennis.db
+                       an SQL script --SQLite.sql. This script creates the database, inserts data and runs queries.
+To use this project:
+- You can download the --SQLite.sql file and run it to create and query the database.
+- Or you can open the database using DB browser for SQLite to view the table.
 
+Some queries you can run include:
+SELECT name FROM Players WHERE country = 'Italy';
+SELECT name FROM Players WHERE ranking = 1;
+SELECT COUNT(*) AS total_players FROM Players;
+SELECT name FROM Players WHERE country = 'USA';
+SELECT name, ranking FROM Players ORDER BY ranking DESC;
